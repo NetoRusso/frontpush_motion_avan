@@ -1,0 +1,95 @@
+// imports ================================================================================
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+// variaveis ===============================================================================
+
+$cor-obsidian: #1a2228;
+$cor-preto: #1a1a1a;
+$cor-branco: #f2f2f2;
+
+$cor-cinza-claro: #e6e6e6;
+$cor-cinza: #6c6c6c;
+$cor-cinza-escuro: #2d2d2d;
+
+//Azuis
+$cor-azul-luz: rgb(166, 220, 237);
+$cor-azul-medio: #00a8e0;
+$cor-azul-escuro: #0d1a53;
+
+//Vermelhos
+$cor-vermelho-luz: #f7b0a2;
+$cor-vermelho-medio: #e65c5c;
+$cor-vermelho-escuro: #a20e0e;
+
+//Verdes
+$cor-verde-luz: #b8e994;
+$cor-verde-medio: #00a854;
+$cor-verde-escuro: #006b3d;
+
+//Amarelos
+$cor-amarelo-luz: #f7d9a2;
+$cor-amarelo-medio: #e67e22;
+$cor-amarelo-escuro: #a6490e;
+
+//Roxos
+$cor-roxo-luz: #d181ff;
+$cor-roxo-medio: #910ea2;
+$cor-roxo-escuro: #3a006a;
+
+
+// resets =================================================================================
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html { 
+  width: 100vw;
+  min-width: 320px;
+  height: auto;
+  min-height: 100vh;
+  overflow-x: hidden;
+
+  body {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    background-color: $cor-preto;
+    color: $cor-branco;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+
+    main {
+      width: 95%;
+      min-width: 320px;
+      height: auto;
+      min-height: 500px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      // background-color: $cor-roxo-escuro;
+
+      .home-btn {
+        position: absolute;
+        top: 48px;
+        left: 48px;
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+
+        &:hover {
+          opacity: 0.8;
+          scale: 1.2;
+          filter: drop-shadow(0 0 16px $cor-azul-luz);
+        }
+      }
+
+    }
+  }
+
+}
+
+

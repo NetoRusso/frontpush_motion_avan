@@ -1,0 +1,99 @@
+@import 'complementos/variaveis';
+@import 'complementos/containerCards';
+
+@import 'complementos/animation_xbox';
+
+.container-geral {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 48px;
+  justify-content: flex-start;
+  align-items: center;
+
+  h1 {
+    font-size: 3rem;
+  }
+
+}
+
+.container-home {
+  .content-cards {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 24px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 48px;
+  }
+
+  .card-1 {
+    .img {
+      width: 150px;
+      height: 150px;
+      filter: drop-shadow(0px 0px 10px rgb(247, 247, 247, 0.3) )
+      drop-shadow(0px 4px 3px rgb(166, 220, 237, 0.5))
+      drop-shadow(0px 0px 1px rgb(184, 233, 148, 0.7));
+    }
+  }
+}
+
+
+.container-xbox {
+  .content-xbox {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    min-height: 70vh;
+
+    a {
+      svg {
+        width: 300px;
+        height: auto;
+        filter: drop-shadow(0px 0px 0px rgba(184, 233, 148, 0)) drop-shadow(0px 0px 0px rgba(0, 0, 0, 0));
+
+        animation: xbox-shadow 7s ease 0s forwards;
+
+
+        #xbox-x1 {
+          animation: stroke-dash 5s ease 0s forwards;
+        }
+
+        #xbox-x2 {
+          animation: stroke-dash 5s ease 0s forwards;
+
+        }
+
+        #xbox-b {
+          animation: stroke-dash 5s ease 0s forwards;
+
+        }
+
+        #xbox-o {
+          animation: stroke-dash 5s ease 0s forwards;
+
+        }
+
+        #xbox-logo {
+          animation: stroke-dash-logo 3s ease 4s forwards;
+          opacity: 0;
+        }
+      }
+
+      &:hover {
+        cursor: pointer;
+
+        svg {
+          scale: 0.95;
+        }
+      }
+    }
+  }
+}
