@@ -499,12 +499,13 @@ html body main .home-btn:hover {
   height: 100%;
   display: flex;
   flex-direction: column;
-  margin-top: 48px;
+  margin-top: 80px;
   justify-content: flex-start;
   align-items: center;
 }
 .container-geral h1 {
-  font-size: 3rem;
+  font-size: 2rem;
+  text-align: center;
 }
 
 .container-home .content-cards {
