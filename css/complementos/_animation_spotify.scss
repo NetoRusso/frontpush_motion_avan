@@ -17,7 +17,13 @@
     height: 164px;
     border-radius: 50%;
     transform-origin: center center;
-    transform: translate(-50%, calc(clamp(-40px, -30px + (100vw - 450px) * (-10 / 990), -30px)));
+    // transform: translate(-50%, calc(clamp(-30%, -60% + (1440px - 360px) * (-10 / 1440), -60%)));
+    transform: translate(-50%, -30%);
+    
+    @media screen and (max-width: 500px) {
+      transform: translate(-50%, -45%);
+      
+    }
   }
 }
 

@@ -556,7 +556,10 @@ html body main .home-btn:hover {
     height: 164px;
     border-radius: 50%;
     transform-origin: center center;
-    transform: translate(-50%, clamp(-40px, -30px + (100vw - 450px) * -0.0101010101, -30px));
+    transform: translate(-50%, -30%);
+    @media screen and (max-width: 500px) {
+      transform: translate(-50%, -45%);
+    }
   }
 }
 @keyframes music1-animation {
@@ -896,7 +899,6 @@ html body main .home-btn:hover {
 .container-spotify .content-spotify a svg {
   width: 300px;
   height: auto;
-  transform: translateY(-30px);
 }
 .container-spotify .content-spotify a svg #bg {
   opacity: 0;
