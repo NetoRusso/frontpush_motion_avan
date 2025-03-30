@@ -556,7 +556,7 @@ html body main .home-btn:hover {
     height: 164px;
     border-radius: 50%;
     transform-origin: center center;
-    transform: translate(-50%, -40%);
+    transform: translate(-50%, clamp(-40px, -30px + (100vw - 450px) * -0.0101010101, -30px));
   }
 }
 @keyframes music1-animation {

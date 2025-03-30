@@ -17,7 +17,7 @@
     height: 164px;
     border-radius: 50%;
     transform-origin: center center;
-    transform: translate(-50%, -40%);
+    transform: translate(-50%, calc(clamp(-40px, -30px + (100vw - 450px) * (-10 / 990), -30px)));
   }
 }
 
