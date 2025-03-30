@@ -551,15 +551,29 @@ html body main .home-btn:hover {
     transform-origin: center center;
     transform: translate(-50%, -50%);
   }
-  75%, 100% {
-    width: 164px;
-    height: 164px;
+  75%, 99% {
+    width: 0;
+    height: 0;
     border-radius: 50%;
     transform-origin: center center;
-    transform: translate(-50%, -30%);
-    @media screen and (max-width: 900px) {
-      transform: translate(-50%, -20%);
-    }
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+@keyframes transform-bg2 {
+  0% {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  90%, 100% {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
   }
 }
 @keyframes music1-animation {
@@ -901,10 +915,7 @@ html body main .home-btn:hover {
   height: auto;
 }
 .container-spotify .content-spotify a svg #bg {
-  opacity: 0;
-  transform-origin: center center;
-  transform-box: fill-box;
-  transform: scale(2);
+  animation: transform-bg2 14s ease 0s forwards;
 }
 .container-spotify .content-spotify a svg #music1 {
   transform-origin: center center;
@@ -939,5 +950,5 @@ html body main .home-btn:hover {
   border-radius: 0%;
   box-shadow: 0px 7px 7px rgba(18, 18, 18, 0.8);
   z-index: -1;
-  animation: transform-bg 15s ease 0s forwards;
+  animation: transform-bg 16s ease 0s forwards;
 }/*# sourceMappingURL=style.css.map */

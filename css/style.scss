@@ -131,13 +131,10 @@
       svg {
         width: 300px;
         height: auto;
-        // transform: translateY(-30px);
 
         #bg {
-          opacity: 0;
-          transform-origin: center center;
-          transform-box: fill-box;
-          transform: scale(2);
+          // opacity: 1;
+          animation: transform-bg2 14s ease 0s forwards;
         }
 
         #music1 {
@@ -179,7 +176,7 @@
       border-radius: 0%;
       box-shadow: 0px 7px 7px rgba(18, 18, 18, 0.8);
       z-index: -1;
-      animation: transform-bg 15s ease 0s forwards;
+      animation: transform-bg 16s ease 0s forwards;
 
     }
   }

@@ -12,19 +12,34 @@
   }
 
   75%,
-  100% {
-    width: 164px;
-    height: 164px;
+  99% {
+    width: 0;
+    height: 0;
     border-radius: 50%;
     transform-origin: center center;
-    transform: translate(-50%, -30%);
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+  100% {
 
-    @media screen and (max-width: 900px) {
-      transform: translate(-50%, -20%);
-    }
-
+    opacity: 0;
+    display: none;
   }
 }
+
+@keyframes transform-bg2 {
+  0%{
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  90%, 100% {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+  }
+}
+
 
 @keyframes music1-animation {
   0% {
