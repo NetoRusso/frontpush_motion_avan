@@ -3,6 +3,7 @@
 
 @import 'complementos/animation_xbox';
 @import 'complementos/animation_spotify';
+@import 'complementos/animation_settings';
 
 
 
@@ -44,7 +45,7 @@
     .img {
       width: 150px;
       height: 150px;
-      filter: drop-shadow(0px 0px 10px rgb(247, 247, 247, 0.3)) drop-shadow(0px 4px 3px rgb(166, 220, 237, 0.5)) drop-shadow(0px 0px 1px rgb(184, 233, 148, 0.7));
+      filter: drop-shadow(0px 0px 10px rgba(247, 247, 247, 0.3)) drop-shadow(0px 4px 3px rgb(166, 220, 237, 0.5)) drop-shadow(0px 0px 1px rgb(184, 233, 148, 0.7));
     }
   }
 
@@ -52,9 +53,19 @@
     .img {
       width: 150px;
       height: 150px;
-      filter: drop-shadow(0px 0px 5px rgb(184, 233, 148, 0.5));
+      filter: drop-shadow(0px 0px 5px rgba(166, 220, 237, 0.5));
     }
   }
+
+  .card-3 {
+    .img {
+      width: 150px;
+      height: 150px;
+      // filter: drop-shadow(0px 0px 5px rgb(184, 233, 148, 0.5));
+    }
+  }
+
+
 }
 
 
@@ -188,3 +199,30 @@
 
 }
 
+.container-settings {
+  .content-settings {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    min-height: 70vh;
+
+    svg {
+      width: 300px;
+      height: auto;
+      filter: drop-shadow(0px 0px 10px rgba(166, 220, 237, 0.5));
+
+      #gear2 {
+        // fill-opacity: 0;
+        
+        animation: gear-animation 10s linear 0s infinite;
+      }
+      #gear1 {
+        animation: gear-animation 15s linear 0s reverse infinite;
+      }
+    }
+  }
+}

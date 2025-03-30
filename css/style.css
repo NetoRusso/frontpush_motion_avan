@@ -45,7 +45,7 @@ html body main .home-btn {
 html body main .home-btn:hover {
   opacity: 0.8;
   scale: 1.2;
-  filter: drop-shadow(0 0 16px rgb(166, 220, 237));
+  filter: drop-shadow(0 0 16px #a6dced);
 }
 
 * {
@@ -91,7 +91,7 @@ html body main .home-btn {
 html body main .home-btn:hover {
   opacity: 0.8;
   scale: 1.2;
-  filter: drop-shadow(0 0 16px rgb(166, 220, 237));
+  filter: drop-shadow(0 0 16px #a6dced);
 }
 
 .content-home-cards {
@@ -148,7 +148,7 @@ html body main .home-btn:hover {
 }
 .content-home-cards .card::before {
   content: "";
-  background: linear-gradient(43deg, #00a8e0 0%, rgb(166, 220, 237) 46%, #0d1a53 100%);
+  background: linear-gradient(43deg, #00a8e0 0%, #a6dced 46%, #0d1a53 100%);
   filter: blur(32px);
   opacity: 0.5;
   width: 100%;
@@ -182,7 +182,7 @@ html body main .home-btn:hover {
   filter: brightness(1.1);
 }
 .content-home-cards:hover {
-  box-shadow: 0 0 24px rgb(166, 220, 237);
+  box-shadow: 0 0 24px #a6dced;
   perspective: 400px;
 }
 .content-home-cards:hover .card::before {
@@ -420,7 +420,7 @@ html body main .home-btn {
 html body main .home-btn:hover {
   opacity: 0.8;
   scale: 1.2;
-  filter: drop-shadow(0 0 16px rgb(166, 220, 237));
+  filter: drop-shadow(0 0 16px #a6dced);
 }
 
 @keyframes stroke-dash {
@@ -540,7 +540,7 @@ html body main .home-btn {
 html body main .home-btn:hover {
   opacity: 0.8;
   scale: 1.2;
-  filter: drop-shadow(0 0 16px rgb(166, 220, 237));
+  filter: drop-shadow(0 0 16px #a6dced);
 }
 
 @keyframes transform-bg {
@@ -823,6 +823,16 @@ html body main .home-btn:hover {
     transform: scale(1);
   }
 }
+@keyframes gear-animation {
+  0% {
+    transform-origin: 50% 50%;
+    transform: rotate(0deg);
+  }
+  100% {
+    transform-origin: 50% 50%;
+    transform: rotate(360deg);
+  }
+}
 .container-geral {
   width: 100%;
   height: 100%;
@@ -862,7 +872,11 @@ html body main .home-btn:hover {
 .container-home .card-2 .img {
   width: 150px;
   height: 150px;
-  filter: drop-shadow(0px 0px 5px rgba(184, 233, 148, 0.5));
+  filter: drop-shadow(0px 0px 5px rgba(166, 220, 237, 0.5));
+}
+.container-home .card-3 .img {
+  width: 150px;
+  height: 150px;
 }
 
 .container-xbox .content-xbox {
@@ -961,4 +975,26 @@ html body main .home-btn:hover {
   box-shadow: 0px 7px 7px rgba(18, 18, 18, 0.8);
   z-index: -1;
   animation: transform-bg 15s ease 0s forwards;
+}
+
+.container-settings .content-settings {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  min-height: 70vh;
+}
+.container-settings .content-settings svg {
+  width: 300px;
+  height: auto;
+  filter: drop-shadow(0px 0px 10px rgba(166, 220, 237, 0.5));
+}
+.container-settings .content-settings svg #gear2 {
+  animation: gear-animation 10s linear 0s infinite;
+}
+.container-settings .content-settings svg #gear1 {
+  animation: gear-animation 15s linear 0s reverse infinite;
 }/*# sourceMappingURL=style.css.map */
