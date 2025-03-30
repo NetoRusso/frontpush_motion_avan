@@ -558,10 +558,6 @@ html body main .home-btn:hover {
     transform-origin: center center;
     transform: translate(-50%, -50%);
     opacity: 1;
-    @media screen and (max-width: 900px) {
-      width: 120px;
-      height: 30px;
-    }
   }
   100% {
     width: 0;
