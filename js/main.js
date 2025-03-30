@@ -5,6 +5,7 @@ function criarHomeBtn() {
 console.log("conectado");
 const main = document.querySelector('main');
 const card1 = document.querySelector('.content-home-cards-1');
+const card2 = document.querySelector('.content-home-cards-2');
 
 const inserirHomeBtn = () => {
   const homeBtnHTML = criarHomeBtn();
@@ -24,8 +25,10 @@ homeBtn.addEventListener('click', goHome);
 
 card1.addEventListener('click', () => {
   window.location.href = '/pages/xbox.html';
+});
 
-  console.log("clicou");
+card2.addEventListener('click', () => {
+  window.location.href = '/pages/spotify.html';
 });
 
 

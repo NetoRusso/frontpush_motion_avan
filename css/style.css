@@ -99,6 +99,7 @@ html body main .home-btn:hover {
   height: 400px;
   transition: 200ms;
   border-radius: 24px;
+  margin: 16px;
 }
 .content-home-cards:active {
   transform: scale(0.8);
@@ -115,7 +116,7 @@ html body main .home-btn:hover {
   background-color: #1a2228;
 }
 .content-home-cards .card .subtitle {
-  transform: translateY(260px);
+  transform: translateY(240px);
   color: #6c6c6c;
   font-weight: 800;
   text-align: center;
@@ -125,11 +126,12 @@ html body main .home-btn:hover {
   bottom: 16px;
   left: 16px;
   z-index: 20;
-  font-size: 24px;
+  padding: 8px;
+  font-size: 16px;
   font-weight: 800;
   transition: 300ms ease-in-out-out;
   position: absolute;
-  max-width: 280px;
+  max-width: 250px;
   color: #f2f2f2;
 }
 .content-home-cards .card::after {
@@ -516,12 +518,24 @@ html body main .home-btn:hover {
   gap: 24px;
   justify-content: flex-start;
   align-items: flex-start;
-  margin-top: 48px;
+  margin: 48px auto;
+}
+@media screen and (max-width: 768px) {
+  .container-home .content-cards {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .container-home .card-1 .img {
   width: 150px;
   height: 150px;
   filter: drop-shadow(0px 0px 10px rgba(247, 247, 247, 0.3)) drop-shadow(0px 4px 3px rgba(166, 220, 237, 0.5)) drop-shadow(0px 0px 1px rgba(184, 233, 148, 0.7));
+}
+.container-home .card-2 .img {
+  width: 150px;
+  height: 150px;
+  filter: drop-shadow(0px 0px 5px rgba(184, 233, 148, 0.5));
 }
 
 .container-xbox .content-xbox {

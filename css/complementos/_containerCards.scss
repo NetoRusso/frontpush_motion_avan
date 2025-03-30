@@ -7,6 +7,7 @@
   height: 400px;
   transition: 200ms;
   border-radius: 24px;
+  margin: 16px;
 
   &:active {
     transform: scale(0.8);
@@ -24,7 +25,7 @@
     background-color: $cor-obsidian;
 
     .subtitle {
-      transform: translateY(260px);
+      transform: translateY(240px);
       color: $cor-cinza;
       font-weight: 800;
       text-align: center;
@@ -35,11 +36,12 @@
       bottom: 16px;
       left: 16px;
       z-index: 20;
-      font-size: 24px;
+      padding: 8px;
+      font-size: 16px;
       font-weight: 800;
       transition: 300ms ease-in-out-out;
       position: absolute;
-      max-width: 280px;
+      max-width: 250px;
       color: $cor-branco;
     }
 
