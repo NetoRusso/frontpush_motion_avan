@@ -2,6 +2,9 @@
 @import 'complementos/containerCards';
 
 @import 'complementos/animation_xbox';
+@import 'complementos/animation_spotify';
+
+
 
 .container-geral {
   width: 100%;
@@ -13,7 +16,7 @@
   align-items: center;
 
   h1 {
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 1.1667rem + 1.4815vw, 2.5rem);
     text-align: center;
   }
 
@@ -41,9 +44,7 @@
     .img {
       width: 150px;
       height: 150px;
-      filter: drop-shadow(0px 0px 10px rgb(247, 247, 247, 0.3) )
-      drop-shadow(0px 4px 3px rgb(166, 220, 237, 0.5))
-      drop-shadow(0px 0px 1px rgb(184, 233, 148, 0.7));
+      filter: drop-shadow(0px 0px 10px rgb(247, 247, 247, 0.3)) drop-shadow(0px 4px 3px rgb(166, 220, 237, 0.5)) drop-shadow(0px 0px 1px rgb(184, 233, 148, 0.7));
     }
   }
 
@@ -97,7 +98,7 @@
         }
 
         #xbox-logo {
-          animation: stroke-dash-logo 3s ease 4s forwards;
+          animation: stroke-dash-logo 4s ease 5s forwards;
           opacity: 0;
         }
       }
@@ -111,4 +112,76 @@
       }
     }
   }
+}
+
+.container-spotify {
+  .content-spotify {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    min-height: 70vh;
+
+    a {
+
+
+      svg {
+        width: 300px;
+        height: auto;
+        transform: translateY(-30px);
+
+        #bg {
+          opacity: 0;
+          transform-origin: center center;
+          transform-box: fill-box;
+          transform: scale(2);
+        }
+
+        #music1 {
+          transform-origin: center center;
+          transform-box: fill-box;
+          animation: music1-animation 16s ease-in-out forwards;
+        }
+
+        #music2 {
+          transform-origin: center center;
+          transform-box: fill-box;
+          animation: music2-animation 16s ease-in-out forwards;
+        }
+
+        #music3 {
+          transform-origin: center center;
+          transform-box: fill-box;
+          animation: music3-animation 16s ease-in-out forwards;
+        }
+
+        #text-spotify {
+          transform-origin: 50% 50%;
+          transform-box: fill-box;
+          opacity: 0;
+          animation: text-spotify-animation 2s ease-in-out 11s forwards;
+        }
+      }
+    }
+
+    .bg-suporte {
+      width: 100vw;
+      height: 100vh;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform-origin: 50% 50%;
+      transform: translate(-50%, -50%);
+      background-color: #00D95A;
+      border-radius: 0%;
+      box-shadow: 0px 7px 7px rgba(18, 18, 18, 0.8);
+      z-index: -1;
+      animation: transform-bg 15s ease 0s forwards;
+
+    }
+  }
+
 }
