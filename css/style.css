@@ -919,6 +919,40 @@ html body main .home-btn:hover {
     transform: rotate(360deg);
   }
 }
+@keyframes cursor-move {
+  0% {
+    opacity: 0;
+    transform: translate3d(150px, 0, 0) scale(1);
+  }
+  30% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  60% {
+    opacity: 1;
+    transform: translate3d(-200px, -200px, 0) scale(1);
+  }
+  65% {
+    opacity: 1;
+    transform: translate3d(-200px, -200px, 0) scale(0.8);
+  }
+  70% {
+    opacity: 1;
+    transform: translate3d(-200px, -200px, 0) scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(-300px, -50px, 0);
+  }
+}
+@keyframes box-click {
+  0%, 65% {
+    opacity: 0;
+  }
+  66%, 100% {
+    opacity: 1;
+  }
+}
 .container-geral {
   width: 100%;
   height: 100%;
@@ -938,7 +972,7 @@ html body main .home-btn:hover {
   height: auto;
   display: flex;
   flex-flow: row wrap;
-  gap: 24px;
+  gap: 48px;
   justify-content: center;
   align-items: center;
   margin: 48px auto;
@@ -1021,6 +1055,36 @@ html body main .home-btn:hover {
 }
 .container-home .card-3 .img svg #gear1 {
   animation: gear-animation 5s linear 0s reverse infinite;
+}
+.container-home .card-4 .img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-home .card-4 .img svg {
+  width: 300px;
+  height: auto;
+}
+.container-home .card-4 .img svg #cursor {
+  transform-origin: 50% 50%;
+  transform-box: fill-box;
+  animation: cursor-move 5s ease infinite alternate;
+}
+.container-home .card-4 .img svg #box {
+  animation: box-click 5s ease infinite alternate;
+}
+.container-home .card-5 .img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-home .card-5 .img svg {
+  width: 250px;
+  height: auto;
 }
 
 .container-xbox .content-xbox {
@@ -1141,4 +1205,43 @@ html body main .home-btn:hover {
 }
 .container-settings .content-settings svg #gear1 {
   animation: gear-animation 10s linear 0s reverse infinite;
+}
+
+.container-box .content-box {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  min-height: 70vh;
+}
+.container-box .content-box svg {
+  width: 300px;
+  height: auto;
+}
+.container-box .content-box svg #cursor {
+  transform-origin: 50% 50%;
+  transform-box: fill-box;
+  animation: cursor-move 5s ease infinite alternate;
+}
+.container-box .content-box svg #box {
+  animation: box-click 5s ease infinite alternate;
+}
+
+.container-text .content-box {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  min-height: 70vh;
+}
+.container-text .content-box svg {
+  width: 150px;
+  height: auto;
+  fill-opacity: 0;
 }/*# sourceMappingURL=style.css.map */
