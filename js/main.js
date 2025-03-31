@@ -7,6 +7,7 @@ const main = document.querySelector('main');
 const card1 = document.querySelector('.content-home-cards-1');
 const card2 = document.querySelector('.content-home-cards-2');
 const card3 = document.querySelector('.content-home-cards-3');
+const card4 = document.querySelector('.content-home-cards-4');
 
 const inserirHomeBtn = () => {
   const homeBtnHTML = criarHomeBtn();
@@ -34,6 +35,10 @@ card2.addEventListener('click', () => {
 
 card3.addEventListener('click', () => {
   window.location.href = '/pages/settings.html';
+});
+
+card4.addEventListener('click', () => {
+  window.location.href = '/pages/box.html';
 });
 
 

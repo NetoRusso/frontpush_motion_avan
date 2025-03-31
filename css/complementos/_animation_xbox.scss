@@ -64,6 +64,65 @@
   }
 }
 
+@keyframes stroke-dash-card {
+  0% {
+    fill-opacity: 0;
+    stroke-dasharray: 1, 1000;
+    stroke-dashoffset: 0;
+    stroke-width: 0;
+    opacity: 1;
+  }
+  30% {
+    fill-opacity: 0;
+    stroke-dasharray: 150, 0;
+    stroke-dashoffset: 0;
+    stroke-width: 1;
+    opacity: 1;
+  }
+  60%, 90% {
+    fill-opacity: 1;
+    stroke-dasharray: 150, 0;
+    stroke-dashoffset: 0;
+    stroke-width: 0;
+    opacity: 1;
+  }
+  100% {
+    fill-opacity: 0;
+    stroke-dasharray: 150, 0;
+    stroke-dashoffset: 0;
+    stroke-width: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes stroke-dash-logo-card { 
+  0% {
+    fill-opacity: 0;
+    stroke-dasharray: 1, 1000;
+    stroke-dashoffset: 0;
+    stroke-width: 0;
+    opacity: 1;
+  }
+
+  70% {
+    fill-opacity: 0;
+    stroke-dasharray: 150, 0;
+    stroke-dashoffset: 0;
+    stroke-width: 1;
+    opacity: 1;
+  }
+  
+  100% {
+    fill-opacity: 1;
+    stroke-dasharray: 150, 0;
+    stroke-dashoffset: 0;
+    stroke-width: 1;
+    opacity: 1;
+  }
+}
+
+
+
 @keyframes xbox-shadow {
   0%,20% {
     filter: drop-shadow(0px 0px 50px rgb(166, 220, 237, 0) )
