@@ -1,11 +1,13 @@
 
 @keyframes gear-animation {
   0% {
+    transform-box: fill-box;
     transform-origin: 50% 50%;
     transform: rotate(0deg);
   }
-
+  
   100% {
+    transform-box: fill-box;
     transform-origin: 50% 50%;
     transform: rotate(360deg);
   }
