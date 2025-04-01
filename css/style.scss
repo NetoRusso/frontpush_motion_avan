@@ -5,6 +5,8 @@
 @import 'complementos/animation_spotify';
 @import 'complementos/animation_settings';
 @import 'complementos/animation_box';
+@import './complementos/animation_sharigan.scss';
+
 
 
 
@@ -35,7 +37,7 @@
     gap: 48px;
     justify-content: center;
     align-items: center;
-    margin: 48px auto;
+    margin: 56px auto;
 
     @media screen and (max-width: 768px) {
       flex-direction: column;
@@ -176,6 +178,192 @@
 
     }
   }
+
+  .card-6 {
+    .img {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .sharingan {
+        width: 300px;
+        height: 300px;
+        scale: 0.75;
+        background-color: $cor-vermelho-escuro;
+        border-radius: 50%;
+        position: relative;
+        animation: piscar 5s ease, rodar 10s cubic-bezier(.49, .5, 1, -0.87) infinite alternate;
+  
+        &::before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 60%;
+          height: 60%;
+          border: $cor-preto solid 5px;
+          border-radius: 50%;
+          animation: beforeBG 10s ease infinite alternate;
+        }
+  
+        &::after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%) skew(-30deg, -50deg) rotate(125deg) scale(0.8);
+          width: 60%;
+          height: 60%;
+          background-color: $cor-preto;
+          animation: afterSharingan 10s ease infinite alternate;
+        }
+  
+        .tomoe1 {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%) skew(50deg, 30deg) scale(0.8);
+          width: 60%;
+          height: 60%;
+          background-color: $cor-preto;
+          border-radius: 50%;
+          animation: tomoe1 10s ease infinite alternate;
+  
+          &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) skew(50deg, 30deg) rotate(35deg) scale(0.8);
+            width: 35px;
+            height: 35px;
+            background-color: $cor-vermelho-escuro;
+            animation: pupila 10s ease infinite alternate;
+          }
+  
+          &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) skew(-30deg, -50deg) rotate(125deg) scale(0.8);
+            width: 35px;
+            height: 35px;
+            background-color: $cor-vermelho-escuro;
+            animation: pupila 10s ease infinite alternate;
+          }
+  
+        }
+  
+        .tomoe2 {
+          position: absolute;
+          top: 70px;
+          left: 70px;
+          width: 30px;
+          height: 30px;
+          background-color: $cor-preto;
+          border-radius: 50%;
+          animation: tomoe2 10s ease infinite alternate, rodar 2s linear infinite;
+  
+  
+          &::before {
+            content: "";
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background-color: $cor-preto;
+            background-color: transparent;
+            border-bottom-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+            border-top-left-radius: 80%;
+            box-shadow: -10px -0px 0 $cor-preto, ;
+            transform-origin: 45% 50%;
+            transform: rotate(-30deg) skewY(-5deg);
+            top: -13px;
+            left: 8px;
+          }
+        }
+  
+        .tomoe3 {
+          position: absolute;
+          top: 120px;
+          right: 45px;
+          width: 30px;
+          height: 30px;
+          background-color: $cor-preto;
+          border-radius: 50%;
+          animation: tomoe3 10s ease infinite alternate, rodar 2s linear infinite;
+  
+  
+          &::before {
+            content: "";
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background-color: $cor-preto;
+            background-color: transparent;
+            border-bottom-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+            border-top-left-radius: 80%;
+            box-shadow: -10px -0px 0 $cor-preto, ;
+            transform-origin: 45% 50%;
+            transform: rotate(90deg) skewY(-5deg);
+            top: 10px;
+            left: 13px;
+          }
+        }
+  
+        .tomoe4 {
+          position: absolute;
+          bottom: 50px;
+          left: 100px;
+          width: 30px;
+          height: 30px;
+          background-color: $cor-preto;
+          border-radius: 50%;
+          animation: tomoe4 10s ease infinite alternate, rodar 2s linear infinite;
+  
+  
+          &::before {
+            content: "";
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background-color: $cor-preto;
+            background-color: transparent;
+            border-bottom-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+            border-top-left-radius: 80%;
+            box-shadow: -10px -0px 0 $cor-preto ;
+            transform-origin: 45% 50%;
+            transform: rotate(180deg) skewY(-5deg);
+            top: 10px;
+            left: -8px;
+          }
+        }
+  
+  
+        .tomoe5 {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          border-radius: 50%;
+          border: 5px solid $cor-vermelho-escuro;
+          width: 20px;
+          height: 20px;
+          animation: tomoe5 10s ease infinite alternate;
+        }
+  
+      }
+
+    }
+  }
+
+
 }
 
 
@@ -365,7 +553,7 @@
 }
 
 .container-text {
-  .content-box {
+  .content-text {
     margin-top: 48px;
     display: flex;
     flex-direction: column;
@@ -378,8 +566,195 @@
     #texto {
       width: 250px;
       height: auto;
-
     }
   }
+}
 
+.container-sharingan {
+  .content-Sharingan {
+    width: 100%;
+    height: auto;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .sharingan {
+      width: 300px;
+      height: 300px;
+      background-color: $cor-vermelho-escuro;
+      border-radius: 50%;
+      position: relative;
+      animation: piscar 5s ease, rodar 10s cubic-bezier(.49, .5, 1, -0.87) infinite alternate;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 60%;
+        height: 60%;
+        border: $cor-preto solid 5px;
+        border-radius: 50%;
+        animation: beforeBG 10s ease infinite alternate;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) skew(-30deg, -50deg) rotate(125deg) scale(0.8);
+        width: 60%;
+        height: 60%;
+        background-color: $cor-preto;
+        animation: afterSharingan 10s ease infinite alternate;
+      }
+
+      .tomoe1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) skew(50deg, 30deg) scale(0.8);
+        width: 60%;
+        height: 60%;
+        background-color: $cor-preto;
+        border-radius: 50%;
+        animation: tomoe1 10s ease infinite alternate;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%) skew(50deg, 30deg) rotate(35deg) scale(0.8);
+          width: 35px;
+          height: 35px;
+          background-color: $cor-vermelho-escuro;
+          animation: pupila 10s ease infinite alternate;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%) skew(-30deg, -50deg) rotate(125deg) scale(0.8);
+          width: 35px;
+          height: 35px;
+          background-color: $cor-vermelho-escuro;
+          animation: pupila 10s ease infinite alternate;
+        }
+
+      }
+
+      .tomoe2 {
+        position: absolute;
+        top: 70px;
+        left: 70px;
+        width: 30px;
+        height: 30px;
+        background-color: $cor-preto;
+        border-radius: 50%;
+        animation: tomoe2 10s ease infinite alternate, rodar 2s linear infinite;
+
+
+        &::before {
+          content: "";
+          position: absolute;
+          width: 30px;
+          height: 30px;
+          background-color: $cor-preto;
+          background-color: transparent;
+          border-bottom-left-radius: 50%;
+          border-bottom-right-radius: 50%;
+          border-top-left-radius: 80%;
+          box-shadow: -10px -0px 0 $cor-preto, ;
+          transform-origin: 45% 50%;
+          transform: rotate(-30deg) skewY(-5deg);
+          top: -13px;
+          left: 8px;
+        }
+      }
+
+      .tomoe3 {
+        position: absolute;
+        top: 120px;
+        right: 45px;
+        width: 30px;
+        height: 30px;
+        background-color: $cor-preto;
+        border-radius: 50%;
+        animation: tomoe3 10s ease infinite alternate, rodar 2s linear infinite;
+
+
+        &::before {
+          content: "";
+          position: absolute;
+          width: 30px;
+          height: 30px;
+          background-color: $cor-preto;
+          background-color: transparent;
+          border-bottom-left-radius: 50%;
+          border-bottom-right-radius: 50%;
+          border-top-left-radius: 80%;
+          box-shadow: -10px -0px 0 $cor-preto, ;
+          transform-origin: 45% 50%;
+          transform: rotate(90deg) skewY(-5deg);
+          top: 10px;
+          left: 13px;
+        }
+      }
+
+      .tomoe4 {
+        position: absolute;
+        bottom: 50px;
+        left: 100px;
+        width: 30px;
+        height: 30px;
+        background-color: $cor-preto;
+        border-radius: 50%;
+        animation: tomoe4 10s ease infinite alternate, rodar 2s linear infinite;
+
+
+        &::before {
+          content: "";
+          position: absolute;
+          width: 30px;
+          height: 30px;
+          background-color: $cor-preto;
+          background-color: transparent;
+          border-bottom-left-radius: 50%;
+          border-bottom-right-radius: 50%;
+          border-top-left-radius: 80%;
+          box-shadow: -10px -0px 0 $cor-preto ;
+          transform-origin: 45% 50%;
+          transform: rotate(180deg) skewY(-5deg);
+          top: 10px;
+          left: -8px;
+        }
+      }
+
+
+      .tomoe5 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        border: 5px solid $cor-vermelho-escuro;
+        width: 20px;
+        height: 20px;
+        animation: tomoe5 10s ease infinite alternate;
+      }
+
+      &:hover {
+        cursor: pointer;
+        scale: 0.95;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+
+  }
 }

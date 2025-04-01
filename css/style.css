@@ -1,53 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  width: 100vw;
-  min-width: 320px;
-  height: auto;
-  min-height: 100vh;
-  overflow-x: hidden;
-}
-html body {
-  width: 100%;
-  height: auto;
-  min-height: 100vh;
-  background-color: #1a1a1a;
-  color: #f2f2f2;
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-}
-html body main {
-  width: 95%;
-  min-width: 320px;
-  height: auto;
-  min-height: 500px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-html body main .home-btn {
-  position: absolute;
-  top: 48px;
-  left: 48px;
-  width: 32px;
-  height: 32px;
-  cursor: pointer;
-}
-html body main .home-btn:hover {
-  opacity: 0.8;
-  scale: 1.2;
-  filter: drop-shadow(0 0 16px #a6dced);
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -377,52 +328,6 @@ html body main .home-btn:hover {
   transform: rotateX(-20deg) rotateY(10deg) rotateZ(0deg);
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  width: 100vw;
-  min-width: 320px;
-  height: auto;
-  min-height: 100vh;
-  overflow-x: hidden;
-}
-html body {
-  width: 100%;
-  height: auto;
-  min-height: 100vh;
-  background-color: #1a1a1a;
-  color: #f2f2f2;
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-}
-html body main {
-  width: 95%;
-  min-width: 320px;
-  height: auto;
-  min-height: 500px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-html body main .home-btn {
-  position: absolute;
-  top: 48px;
-  left: 48px;
-  width: 32px;
-  height: 32px;
-  cursor: pointer;
-}
-html body main .home-btn:hover {
-  opacity: 0.8;
-  scale: 1.2;
-  filter: drop-shadow(0 0 16px #a6dced);
-}
-
 @keyframes stroke-dash {
   0% {
     fill-opacity: 0;
@@ -550,52 +455,6 @@ html body main .home-btn:hover {
     filter: drop-shadow(0px 0px 50px rgba(247, 247, 247, 0.3)) drop-shadow(0px 4px 10px rgba(166, 220, 237, 0.5)) drop-shadow(0px 0px 5px rgba(184, 233, 148, 0.7));
   }
 }
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  width: 100vw;
-  min-width: 320px;
-  height: auto;
-  min-height: 100vh;
-  overflow-x: hidden;
-}
-html body {
-  width: 100%;
-  height: auto;
-  min-height: 100vh;
-  background-color: #1a1a1a;
-  color: #f2f2f2;
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-}
-html body main {
-  width: 95%;
-  min-width: 320px;
-  height: auto;
-  min-height: 500px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-html body main .home-btn {
-  position: absolute;
-  top: 48px;
-  left: 48px;
-  width: 32px;
-  height: 32px;
-  cursor: pointer;
-}
-html body main .home-btn:hover {
-  opacity: 0.8;
-  scale: 1.2;
-  filter: drop-shadow(0 0 16px #a6dced);
-}
-
 @keyframes transform-bg {
   0%, 60% {
     width: 320px;
@@ -953,6 +812,143 @@ html body main .home-btn:hover {
     opacity: 1;
   }
 }
+@keyframes rodar {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(1280deg);
+  }
+}
+@keyframes tomoe1 {
+  0%, 10% {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) skew(50deg, 30deg) rotate(35deg) scale(0.8);
+    width: 60%;
+    height: 60%;
+    background-color: #1a1a1a;
+    border-radius: 50%;
+    -webkit-clip-path: circle(50% at 50% 50%);
+            clip-path: circle(50% at 50% 50%);
+  }
+  40%, 70% {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) skew(0deg, 0deg) rotate(0deg) scale(1);
+    width: 35px;
+    height: 35px;
+    background-color: #1a1a1a;
+    border-radius: 50%;
+    -webkit-clip-path: circle(50% at 50% 50%);
+            clip-path: circle(50% at 50% 50%);
+  }
+  90%, 100% {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-35deg) scale(1.2);
+    width: 70%;
+    height: 70%;
+    background-color: #1a1a1a;
+    border-radius: 0;
+    -webkit-clip-path: polygon(0 0, 0 0, 20% 20%, 100% 0, 100% 0, 80% 20%, 100% 100%, 100% 100%, 80% 80%, 0 100%, 0 100%, 20% 80%);
+            clip-path: polygon(0 0, 0 0, 20% 20%, 100% 0, 100% 0, 80% 20%, 100% 100%, 100% 100%, 80% 80%, 0 100%, 0 100%, 20% 80%);
+  }
+}
+@keyframes afterSharingan {
+  0%, 10% {
+    opacity: 1;
+  }
+  20%, 100% {
+    opacity: 0;
+  }
+}
+@keyframes tomoe2 {
+  0%, 10% {
+    opacity: 0;
+    scale: 1;
+  }
+  20%, 70% {
+    opacity: 1;
+    scale: 1;
+  }
+  80%, 100% {
+    opacity: 0;
+    scale: 3;
+  }
+}
+@keyframes tomoe3 {
+  0%, 20% {
+    opacity: 0;
+    scale: 1;
+  }
+  30%, 70% {
+    opacity: 1;
+    scale: 1;
+  }
+  80%, 100% {
+    opacity: 0;
+    scale: 3;
+  }
+}
+@keyframes tomoe4 {
+  0%, 30% {
+    opacity: 0;
+    scale: 1;
+  }
+  40%, 70% {
+    opacity: 1;
+    scale: 1;
+  }
+  80%, 100% {
+    opacity: 0;
+    scale: 3;
+  }
+}
+@keyframes beforeBG {
+  0%, 60% {
+    background-color: #a20e0e;
+    width: 60%;
+    height: 60%;
+  }
+  80%, 100% {
+    background-color: #1a1a1a;
+    width: 90px;
+    height: 90px;
+  }
+}
+@keyframes tomoe5 {
+  0%, 50% {
+    border-radius: 50%;
+  }
+  80%, 100% {
+    border-radius: 0%;
+  }
+}
+@keyframes pupila {
+  0%, 50% {
+    background-color: transparent;
+  }
+  60%, 90% {
+    background-color: #a20e0e;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+@keyframes piscar {
+  0%, 10% {
+    width: 0;
+    height: 0;
+  }
+  20%, 30% {
+    width: 300px;
+    height: 300px;
+  }
+}
 .container-geral {
   width: 100%;
   height: 100%;
@@ -975,7 +971,7 @@ html body main .home-btn:hover {
   gap: 48px;
   justify-content: center;
   align-items: center;
-  margin: 48px auto;
+  margin: 56px auto;
 }
 @media screen and (max-width: 768px) {
   .container-home .content-cards {
@@ -1085,6 +1081,167 @@ html body main .home-btn:hover {
 .container-home .card-5 .img svg {
   width: 250px;
   height: auto;
+}
+.container-home .card-6 .img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-home .card-6 .img .sharingan {
+  width: 300px;
+  height: 300px;
+  scale: 0.75;
+  background-color: #a20e0e;
+  border-radius: 50%;
+  position: relative;
+  animation: piscar 5s ease, rodar 10s cubic-bezier(0.49, 0.5, 1, -0.87) infinite alternate;
+}
+.container-home .card-6 .img .sharingan::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: 60%;
+  border: #1a1a1a solid 5px;
+  border-radius: 50%;
+  animation: beforeBG 10s ease infinite alternate;
+}
+.container-home .card-6 .img .sharingan::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) skew(-30deg, -50deg) rotate(125deg) scale(0.8);
+  width: 60%;
+  height: 60%;
+  background-color: #1a1a1a;
+  animation: afterSharingan 10s ease infinite alternate;
+}
+.container-home .card-6 .img .sharingan .tomoe1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) skew(50deg, 30deg) scale(0.8);
+  width: 60%;
+  height: 60%;
+  background-color: #1a1a1a;
+  border-radius: 50%;
+  animation: tomoe1 10s ease infinite alternate;
+}
+.container-home .card-6 .img .sharingan .tomoe1::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) skew(50deg, 30deg) rotate(35deg) scale(0.8);
+  width: 35px;
+  height: 35px;
+  background-color: #a20e0e;
+  animation: pupila 10s ease infinite alternate;
+}
+.container-home .card-6 .img .sharingan .tomoe1::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) skew(-30deg, -50deg) rotate(125deg) scale(0.8);
+  width: 35px;
+  height: 35px;
+  background-color: #a20e0e;
+  animation: pupila 10s ease infinite alternate;
+}
+.container-home .card-6 .img .sharingan .tomoe2 {
+  position: absolute;
+  top: 70px;
+  left: 70px;
+  width: 30px;
+  height: 30px;
+  background-color: #1a1a1a;
+  border-radius: 50%;
+  animation: tomoe2 10s ease infinite alternate, rodar 2s linear infinite;
+}
+.container-home .card-6 .img .sharingan .tomoe2::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #1a1a1a;
+  background-color: transparent;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-left-radius: 80%;
+  box-shadow: -10px 0px 0 #1a1a1a;
+  transform-origin: 45% 50%;
+  transform: rotate(-30deg) skewY(-5deg);
+  top: -13px;
+  left: 8px;
+}
+.container-home .card-6 .img .sharingan .tomoe3 {
+  position: absolute;
+  top: 120px;
+  right: 45px;
+  width: 30px;
+  height: 30px;
+  background-color: #1a1a1a;
+  border-radius: 50%;
+  animation: tomoe3 10s ease infinite alternate, rodar 2s linear infinite;
+}
+.container-home .card-6 .img .sharingan .tomoe3::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #1a1a1a;
+  background-color: transparent;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-left-radius: 80%;
+  box-shadow: -10px 0px 0 #1a1a1a;
+  transform-origin: 45% 50%;
+  transform: rotate(90deg) skewY(-5deg);
+  top: 10px;
+  left: 13px;
+}
+.container-home .card-6 .img .sharingan .tomoe4 {
+  position: absolute;
+  bottom: 50px;
+  left: 100px;
+  width: 30px;
+  height: 30px;
+  background-color: #1a1a1a;
+  border-radius: 50%;
+  animation: tomoe4 10s ease infinite alternate, rodar 2s linear infinite;
+}
+.container-home .card-6 .img .sharingan .tomoe4::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #1a1a1a;
+  background-color: transparent;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-left-radius: 80%;
+  box-shadow: -10px 0px 0 #1a1a1a;
+  transform-origin: 45% 50%;
+  transform: rotate(180deg) skewY(-5deg);
+  top: 10px;
+  left: -8px;
+}
+.container-home .card-6 .img .sharingan .tomoe5 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 5px solid #a20e0e;
+  width: 20px;
+  height: 20px;
+  animation: tomoe5 10s ease infinite alternate;
 }
 
 .container-xbox .content-xbox {
@@ -1230,7 +1387,7 @@ html body main .home-btn:hover {
   animation: box-click 5s ease infinite alternate;
 }
 
-.container-text .content-box {
+.container-text .content-text {
   margin-top: 48px;
   display: flex;
   flex-direction: column;
@@ -1240,7 +1397,174 @@ html body main .home-btn:hover {
   height: auto;
   min-height: 70vh;
 }
-.container-text .content-box #texto {
+.container-text .content-text #texto {
   width: 250px;
   height: auto;
+}
+
+.container-sharingan .content-Sharingan {
+  width: 100%;
+  height: auto;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-sharingan .content-Sharingan .sharingan {
+  width: 300px;
+  height: 300px;
+  background-color: #a20e0e;
+  border-radius: 50%;
+  position: relative;
+  animation: piscar 5s ease, rodar 10s cubic-bezier(0.49, 0.5, 1, -0.87) infinite alternate;
+}
+.container-sharingan .content-Sharingan .sharingan::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: 60%;
+  border: #1a1a1a solid 5px;
+  border-radius: 50%;
+  animation: beforeBG 10s ease infinite alternate;
+}
+.container-sharingan .content-Sharingan .sharingan::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) skew(-30deg, -50deg) rotate(125deg) scale(0.8);
+  width: 60%;
+  height: 60%;
+  background-color: #1a1a1a;
+  animation: afterSharingan 10s ease infinite alternate;
+}
+.container-sharingan .content-Sharingan .sharingan .tomoe1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) skew(50deg, 30deg) scale(0.8);
+  width: 60%;
+  height: 60%;
+  background-color: #1a1a1a;
+  border-radius: 50%;
+  animation: tomoe1 10s ease infinite alternate;
+}
+.container-sharingan .content-Sharingan .sharingan .tomoe1::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) skew(50deg, 30deg) rotate(35deg) scale(0.8);
+  width: 35px;
+  height: 35px;
+  background-color: #a20e0e;
+  animation: pupila 10s ease infinite alternate;
+}
+.container-sharingan .content-Sharingan .sharingan .tomoe1::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) skew(-30deg, -50deg) rotate(125deg) scale(0.8);
+  width: 35px;
+  height: 35px;
+  background-color: #a20e0e;
+  animation: pupila 10s ease infinite alternate;
+}
+.container-sharingan .content-Sharingan .sharingan .tomoe2 {
+  position: absolute;
+  top: 70px;
+  left: 70px;
+  width: 30px;
+  height: 30px;
+  background-color: #1a1a1a;
+  border-radius: 50%;
+  animation: tomoe2 10s ease infinite alternate, rodar 2s linear infinite;
+}
+.container-sharingan .content-Sharingan .sharingan .tomoe2::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #1a1a1a;
+  background-color: transparent;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-left-radius: 80%;
+  box-shadow: -10px 0px 0 #1a1a1a;
+  transform-origin: 45% 50%;
+  transform: rotate(-30deg) skewY(-5deg);
+  top: -13px;
+  left: 8px;
+}
+.container-sharingan .content-Sharingan .sharingan .tomoe3 {
+  position: absolute;
+  top: 120px;
+  right: 45px;
+  width: 30px;
+  height: 30px;
+  background-color: #1a1a1a;
+  border-radius: 50%;
+  animation: tomoe3 10s ease infinite alternate, rodar 2s linear infinite;
+}
+.container-sharingan .content-Sharingan .sharingan .tomoe3::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #1a1a1a;
+  background-color: transparent;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-left-radius: 80%;
+  box-shadow: -10px 0px 0 #1a1a1a;
+  transform-origin: 45% 50%;
+  transform: rotate(90deg) skewY(-5deg);
+  top: 10px;
+  left: 13px;
+}
+.container-sharingan .content-Sharingan .sharingan .tomoe4 {
+  position: absolute;
+  bottom: 50px;
+  left: 100px;
+  width: 30px;
+  height: 30px;
+  background-color: #1a1a1a;
+  border-radius: 50%;
+  animation: tomoe4 10s ease infinite alternate, rodar 2s linear infinite;
+}
+.container-sharingan .content-Sharingan .sharingan .tomoe4::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #1a1a1a;
+  background-color: transparent;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-left-radius: 80%;
+  box-shadow: -10px 0px 0 #1a1a1a;
+  transform-origin: 45% 50%;
+  transform: rotate(180deg) skewY(-5deg);
+  top: 10px;
+  left: -8px;
+}
+.container-sharingan .content-Sharingan .sharingan .tomoe5 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 5px solid #a20e0e;
+  width: 20px;
+  height: 20px;
+  animation: tomoe5 10s ease infinite alternate;
+}
+.container-sharingan .content-Sharingan .sharingan:hover {
+  cursor: pointer;
+  scale: 0.95;
+  transition: all 0.3s ease-in-out;
 }/*# sourceMappingURL=style.css.map */

@@ -9,6 +9,7 @@ const card2 = document.querySelector('.content-home-cards-2');
 const card3 = document.querySelector('.content-home-cards-3');
 const card4 = document.querySelector('.content-home-cards-4');
 const card5 = document.querySelector('.content-home-cards-5');
+const card6 = document.querySelector('.content-home-cards-6');
 
 const inserirHomeBtn = () => {
   const homeBtnHTML = criarHomeBtn();
@@ -44,6 +45,10 @@ card4.addEventListener('click', () => {
 
 card5.addEventListener('click', () => {
   window.location.href = '/pages/text.html';
+});
+
+card6.addEventListener('click', () => {
+  window.location.href = '/pages/sharingan.html';
 });
 
 
