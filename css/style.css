@@ -1240,8 +1240,7 @@ html body main .home-btn:hover {
   height: auto;
   min-height: 70vh;
 }
-.container-text .content-box svg {
-  width: 150px;
+.container-text .content-box #texto {
+  width: 250px;
   height: auto;
-  fill-opacity: 0;
 }/*# sourceMappingURL=style.css.map */

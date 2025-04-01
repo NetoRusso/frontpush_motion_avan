@@ -179,206 +179,207 @@
 }
 
 
-  .container-xbox {
-    .content-xbox {
-      margin-top: 48px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      height: auto;
-      min-height: 70vh;
+.container-xbox {
+  .content-xbox {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    min-height: 70vh;
 
-      a {
-        svg {
-          width: 300px;
-          height: auto;
-          filter: drop-shadow(0px 0px 0px rgba(184, 233, 148, 0)) drop-shadow(0px 0px 0px rgba(0, 0, 0, 0));
+    a {
+      svg {
+        width: 300px;
+        height: auto;
+        filter: drop-shadow(0px 0px 0px rgba(184, 233, 148, 0)) drop-shadow(0px 0px 0px rgba(0, 0, 0, 0));
 
-          animation: xbox-shadow 7s ease 0s forwards;
+        animation: xbox-shadow 7s ease 0s forwards;
 
 
-          #xbox-x1 {
-            animation: stroke-dash 5s ease 0s forwards;
-          }
-
-          #xbox-x2 {
-            animation: stroke-dash 5s ease 0s forwards;
-
-          }
-
-          #xbox-b {
-            animation: stroke-dash 5s ease 0s forwards;
-
-          }
-
-          #xbox-o {
-            animation: stroke-dash 5s ease 0s forwards;
-
-          }
-
-          #xbox-logo {
-            animation: stroke-dash-logo 4s ease 5s forwards;
-            opacity: 0;
-          }
+        #xbox-x1 {
+          animation: stroke-dash 5s ease 0s forwards;
         }
 
-        &:hover {
-          cursor: pointer;
+        #xbox-x2 {
+          animation: stroke-dash 5s ease 0s forwards;
 
-          svg {
-            scale: 0.95;
-          }
+        }
+
+        #xbox-b {
+          animation: stroke-dash 5s ease 0s forwards;
+
+        }
+
+        #xbox-o {
+          animation: stroke-dash 5s ease 0s forwards;
+
+        }
+
+        #xbox-logo {
+          animation: stroke-dash-logo 4s ease 5s forwards;
+          opacity: 0;
+        }
+      }
+
+      &:hover {
+        cursor: pointer;
+
+        svg {
+          scale: 0.95;
         }
       }
     }
   }
+}
 
-  .container-spotify {
-    .content-spotify {
-      margin-top: 48px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      height: auto;
-      min-height: 70vh;
+.container-spotify {
+  .content-spotify {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    min-height: 70vh;
 
-      a {
+    a {
 
 
-        svg {
-          width: 300px;
-          height: auto;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          z-index: 5;
-
-          #bg {
-            opacity: 0;
-            animation: transform-bg2 15s ease 0s forwards;
-          }
-
-          #music1 {
-            transform-origin: center center;
-            transform-box: fill-box;
-            animation: music1-animation 16s ease-in-out forwards;
-          }
-
-          #music2 {
-            transform-origin: center center;
-            transform-box: fill-box;
-            animation: music2-animation 16s ease-in-out forwards;
-          }
-
-          #music3 {
-            transform-origin: center center;
-            transform-box: fill-box;
-            animation: music3-animation 16s ease-in-out forwards;
-          }
-
-          #text-spotify {
-            transform-origin: 50% 50%;
-            transform-box: fill-box;
-            opacity: 0;
-            animation: text-spotify-animation 2s ease-in-out 11s forwards;
-          }
-        }
-      }
-
-      .bg-suporte {
-        width: 100vw;
-        height: 100vh;
+      svg {
+        width: 300px;
+        height: auto;
         position: absolute;
         top: 50%;
         left: 50%;
-        transform-origin: 50% 50%;
         transform: translate(-50%, -50%);
-        background-color: #00D95A;
-        border-radius: 0%;
-        box-shadow: 0px 7px 7px rgba(18, 18, 18, 0.8);
-        z-index: -1;
-        animation: transform-bg 15s ease 0s forwards;
+        z-index: 5;
 
-      }
-    }
-
-  }
-
-  .container-settings {
-    .content-settings {
-      margin-top: 48px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      height: auto;
-      min-height: 70vh;
-
-      svg {
-        width: 300px;
-        height: auto;
-        filter: drop-shadow(0px 0px 10px rgba(166, 220, 237, 0.5));
-
-        #gear2 {
-          animation: gear-animation 5s linear 0s infinite;
+        #bg {
+          opacity: 0;
+          animation: transform-bg2 15s ease 0s forwards;
         }
 
-        #gear1 {
-          animation: gear-animation 10s linear 0s reverse infinite;
+        #music1 {
+          transform-origin: center center;
+          transform-box: fill-box;
+          animation: music1-animation 16s ease-in-out forwards;
         }
-      }
-    }
-  }
 
-  .container-box {
-    .content-box {
-      margin-top: 48px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      height: auto;
-      min-height: 70vh;
+        #music2 {
+          transform-origin: center center;
+          transform-box: fill-box;
+          animation: music2-animation 16s ease-in-out forwards;
+        }
 
-      svg {
-        width: 300px;
-        height: auto;
+        #music3 {
+          transform-origin: center center;
+          transform-box: fill-box;
+          animation: music3-animation 16s ease-in-out forwards;
+        }
 
-        #cursor {
+        #text-spotify {
           transform-origin: 50% 50%;
           transform-box: fill-box;
-          animation: cursor-move 5s ease infinite alternate;
-        }
-
-        #box {
-          animation: box-click 5s ease infinite alternate;
+          opacity: 0;
+          animation: text-spotify-animation 2s ease-in-out 11s forwards;
         }
       }
     }
+
+    .bg-suporte {
+      width: 100vw;
+      height: 100vh;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform-origin: 50% 50%;
+      transform: translate(-50%, -50%);
+      background-color: #00D95A;
+      border-radius: 0%;
+      box-shadow: 0px 7px 7px rgba(18, 18, 18, 0.8);
+      z-index: -1;
+      animation: transform-bg 15s ease 0s forwards;
+
+    }
   }
 
-  .container-text {
-    .content-box {
-      margin-top: 48px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
+}
+
+.container-settings {
+  .content-settings {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    min-height: 70vh;
+
+    svg {
+      width: 300px;
       height: auto;
-      min-height: 70vh;
+      filter: drop-shadow(0px 0px 10px rgba(166, 220, 237, 0.5));
 
-      svg {
-        width: 150px;
-        height: auto;
-        fill-opacity: 0;
+      #gear2 {
+        animation: gear-animation 5s linear 0s infinite;
+      }
+
+      #gear1 {
+        animation: gear-animation 10s linear 0s reverse infinite;
       }
     }
   }
+}
+
+.container-box {
+  .content-box {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    min-height: 70vh;
+
+    svg {
+      width: 300px;
+      height: auto;
+
+      #cursor {
+        transform-origin: 50% 50%;
+        transform-box: fill-box;
+        animation: cursor-move 5s ease infinite alternate;
+      }
+
+      #box {
+        animation: box-click 5s ease infinite alternate;
+      }
+    }
+  }
+}
+
+.container-text {
+  .content-box {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    min-height: 70vh;
+
+    #texto {
+      width: 250px;
+      height: auto;
+
+    }
+  }
+
+}
