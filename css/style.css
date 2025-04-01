@@ -1088,6 +1088,7 @@ html body main .home-btn:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 .container-home .card-6 .img .sharingan {
   width: 300px;
