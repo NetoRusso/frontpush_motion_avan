@@ -39,95 +39,7 @@ $cor-roxo-escuro: #3a006a;
 
 // Chameleon
 
-$ch-azul-1-bg: #08D9D6;
-$ch-azul-1-body: #00BCB1;
-$ch-azul-1-detalhe: #009B8B;
-$ch-azul-1-boca: #59F7E7;
 
-$ch-azul-2-bg: #4D77FF;
-$ch-azul-2-body: #3865D2;
-$ch-azul-2-detalhe: #2753A6;
-$ch-azul-2-boca: #7DABFF;
-
-$ch-azul-3-bg: #132F6D;
-$ch-azul-3-body: #0C295E;
-$ch-azul-3-detalhe: #07224D;
-$ch-azul-3-boca: #5E7BA7;
-
-$ch-verde-1-bg: #A6CB12;
-$ch-verde-1-body: #95AF07;
-$ch-verde-1-detalhe: #7F9000;
-$ch-verde-1-boca: #DBEC59;
-
-$ch-verde-2-bg: #7CBD1E;
-$ch-verde-2-body: #6EA312;
-$ch-verde-2-detalhe: #5D8509;
-$ch-verde-2-boca: #B7E160;
-
-$ch-verde-3-bg: #1E300D;
-$ch-verde-3-body: #1A2909;
-$ch-verde-3-detalhe: #162206;
-$ch-verde-3-boca: #6F7B5F;
-
-$ch-vermelho-1-bg: #FF6464;
-$ch-vermelho-1-body: #D24C52;
-$ch-vermelho-1-detalhe: #A63741;
-$ch-vermelho-1-boca: #FF8E98;
-
-$ch-vermelho-2-bg: #FF2E63;
-$ch-vermelho-2-body: #D21D55;
-$ch-vermelho-2-detalhe: #A61047;
-$ch-vermelho-2-boca: #FF669F;
-
-$ch-vermelho-3-bg: #9B1212;
-$ch-vermelho-3-body: #86090E;
-$ch-vermelho-3-detalhe: #6E030C;
-$ch-vermelho-3-boca: #C95A63;
-
-$ch-amarelo-1-bg: #FFFA62;
-$ch-amarelo-1-body: #D2CE4A;
-$ch-amarelo-1-detalhe: #A6A236;
-$ch-amarelo-1-boca: #FFFD8C;
-
-$ch-amarelo-2-bg: #FFC60B;
-$ch-amarelo-2-body: #D2A000;
-$ch-amarelo-2-detalhe: #A67900;
-$ch-amarelo-2-boca: #FFD459;
-
-$ch-amarelo-3-bg: #FF9A00;
-$ch-amarelo-3-body: #D27800;
-$ch-amarelo-3-detalhe: #A65700;
-$ch-amarelo-3-boca: #FFB059;
-
-$ch-roxo-1-bg: #A100FF;
-$ch-roxo-1-body: #7E00D2;
-$ch-roxo-1-detalhe: #5C00A6;
-$ch-roxo-1-boca: #B659FF;
-
-$ch-roxo-2-bg: #432160;
-$ch-roxo-2-body: #351952;
-$ch-roxo-2-detalhe: #281143;
-$ch-roxo-2-boca: #816A9D;
-
-$ch-roxo-3-bg: #35013F;
-$ch-roxo-3-body: #2B0037;
-$ch-roxo-3-detalhe: #21002D;
-$ch-roxo-3-boca: #7B5987;
-
-$ch-preto-1-bg: #F2F2F2;
-$ch-preto-1-body: #C8C8C8;
-$ch-preto-1-detalhe: #9D9D9D;
-$ch-preto-1-boca: #F7F7F7;
-
-$ch-preto-2-bg: #A8A8A8;
-$ch-preto-2-body: #8B8B8B;
-$ch-preto-2-detalhe: #6D6D6D;
-$ch-preto-2-boca: #C6C6C6;
-
-$ch-preto-3-bg: #1A1A1A;
-$ch-preto-3-body: #151515;
-$ch-preto-3-detalhe: #111111;
-$ch-preto-3-boca: #6A6A6A;
 
 
 
@@ -186,4 +98,20 @@ html {
 
 }
 
-
+@keyframes mover {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  30% {
+    transform: translate(50px, -80px);
+  }
+  50% {
+    transform: translate(-70px, 100px);
+  }
+  70% {
+    transform: translate(80px, -60px);
+  }
+  100% {
+    transform: translate(-50px, 50px);
+  }
+}

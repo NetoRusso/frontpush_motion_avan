@@ -45,6 +45,23 @@ html body main .home-btn:hover {
   filter: drop-shadow(0 0 16px #a6dced);
 }
 
+@keyframes mover {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  30% {
+    transform: translate(50px, -80px);
+  }
+  50% {
+    transform: translate(-70px, 100px);
+  }
+  70% {
+    transform: translate(80px, -60px);
+  }
+  100% {
+    transform: translate(-50px, 50px);
+  }
+}
 .content-home-cards {
   position: relative;
   width: 320px;
@@ -1665,8 +1682,33 @@ html body main .home-btn:hover {
 .container-home .card-7 .bg #mouth {
   animation: mouthPoket 21s ease infinite 1s alternate;
 }
-.container-home .card-7 .bg #stripe, .container-home .card-7 .bg #tail {
+.container-home .card-7 .bg #stripe,
+.container-home .card-7 .bg #tail {
   animation: stripePoket 21s ease infinite 1s alternate;
+}
+.container-home .card-8 .img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-home .card-8 .img svg {
+  width: 320px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  filter: url("#gooey");
+}
+.container-home .card-8 .img svg #fixo-card {
+  fill: #00a8e0;
+  transform-box: fill-box;
+  transition: all 2s ease;
+}
+.container-home .card-8 .img svg #movel-card {
+  transform-box: fill-box;
+  border-radius: 50%;
+  transition: all 2s ease;
 }
 
 .container-xbox .content-xbox {
@@ -2073,4 +2115,69 @@ html body main .home-btn:hover {
 }
 .container-chameleon .content-chameleon .bg-chameleon svg #chameleon:hover {
   scale: 0.95;
+}
+
+.main-liquid {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  cursor: none;
+}
+.main-liquid .container-liquid {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  overflow: hidden;
+}
+.main-liquid .container-liquid svg {
+  width: 40%;
+  min-width: 280px;
+  height: auto;
+  transition: transform 0.3s ease;
+  padding: 16px;
+  position: absolute;
+  z-index: 1;
+}
+.main-liquid .container-liquid .content-liquid {
+  filter: url("#gooey");
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+}
+.main-liquid .container-liquid .content-liquid #texto {
+  width: 40%;
+  min-width: 280px;
+  height: auto;
+  transition: transform 0.3s ease;
+  padding: 16px;
+  position: absolute;
+  top: 0px;
+  z-index: 2;
+}
+.main-liquid .container-liquid .content-liquid .fixo {
+  width: 100px;
+  height: 100px;
+  background-color: #d181ff;
+  transition: all 0.2s ease-in-out;
+}
+.main-liquid .container-liquid .content-liquid .movel {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  border-radius: 40%;
+  width: 50px;
+  height: 50px;
+  background-color: #a6dced;
+  transform: translate(-50%, -50%);
+  z-index: 3;
 }/*# sourceMappingURL=style.css.map */
