@@ -6,6 +6,9 @@
 @import 'complementos/animation_settings';
 @import 'complementos/animation_box';
 @import './complementos/animation_sharigan.scss';
+@import 'complementos/animation_chameleon';
+
+
 
 
 
@@ -196,7 +199,7 @@
         border-radius: 50%;
         position: relative;
         animation: piscar 5s ease, rodar 10s cubic-bezier(.49, .5, 1, -0.87) infinite alternate;
-  
+
         &::before {
           content: "";
           position: absolute;
@@ -209,7 +212,7 @@
           border-radius: 50%;
           animation: beforeBG 10s ease infinite alternate;
         }
-  
+
         &::after {
           content: "";
           position: absolute;
@@ -221,7 +224,7 @@
           background-color: $cor-preto;
           animation: afterSharingan 10s ease infinite alternate;
         }
-  
+
         .tomoe1 {
           position: absolute;
           top: 50%;
@@ -232,7 +235,7 @@
           background-color: $cor-preto;
           border-radius: 50%;
           animation: tomoe1 10s ease infinite alternate;
-  
+
           &::before {
             content: "";
             position: absolute;
@@ -244,7 +247,7 @@
             background-color: $cor-vermelho-escuro;
             animation: pupila 10s ease infinite alternate;
           }
-  
+
           &::after {
             content: "";
             position: absolute;
@@ -256,9 +259,9 @@
             background-color: $cor-vermelho-escuro;
             animation: pupila 10s ease infinite alternate;
           }
-  
+
         }
-  
+
         .tomoe2 {
           position: absolute;
           top: 70px;
@@ -268,8 +271,8 @@
           background-color: $cor-preto;
           border-radius: 50%;
           animation: tomoe2 10s ease infinite alternate, rodar 2s linear infinite;
-  
-  
+
+
           &::before {
             content: "";
             position: absolute;
@@ -287,7 +290,7 @@
             left: 8px;
           }
         }
-  
+
         .tomoe3 {
           position: absolute;
           top: 120px;
@@ -297,8 +300,8 @@
           background-color: $cor-preto;
           border-radius: 50%;
           animation: tomoe3 10s ease infinite alternate, rodar 2s linear infinite;
-  
-  
+
+
           &::before {
             content: "";
             position: absolute;
@@ -316,7 +319,7 @@
             left: 13px;
           }
         }
-  
+
         .tomoe4 {
           position: absolute;
           bottom: 50px;
@@ -326,8 +329,8 @@
           background-color: $cor-preto;
           border-radius: 50%;
           animation: tomoe4 10s ease infinite alternate, rodar 2s linear infinite;
-  
-  
+
+
           &::before {
             content: "";
             position: absolute;
@@ -345,8 +348,8 @@
             left: -8px;
           }
         }
-  
-  
+
+
         .tomoe5 {
           position: absolute;
           top: 50%;
@@ -358,14 +361,70 @@
           height: 20px;
           animation: tomoe5 10s ease infinite alternate;
         }
-  
+
       }
 
     }
   }
 
+  .card-7 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 
+    .bg {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      animation: bgPoket 21s ease infinite alternate;
+
+      svg {
+        width: 100%;
+        height: auto;
+        perspective: 200px;
+      }
+
+      #eye {
+        transform-origin: 50% 50%;
+        transform-box: fill-box;
+        animation: eyePoket 10s ease infinite alternate-reverse;
+      }
+
+      #iris {
+        transform-origin: center center;
+        transform-box: fill-box;
+        animation: irisPoket 10s ease infinite alternate-reverse;
+      }
+
+      #body {
+        transform-origin: center center;
+        transform-box: fill-box;
+        animation: bodyPoket 21s ease infinite 1s alternate;
+      }
+
+      #chameleon {
+        transform-origin: 50% 50%;
+        transform-box: fill-box;
+        animation: chameleonPoket 21s ease infinite 1s alternate;
+      }
+
+      #mouth {
+        animation: mouthPoket 21s ease infinite 1s alternate;
+      }
+
+      #stripe, #tail {
+        animation: stripePoket 21s ease infinite 1s alternate;
+      }
+
+    }
+  }
 }
+
+
+
 
 
 .container-xbox {
@@ -759,5 +818,97 @@
       }
     }
 
+  }
+}
+
+.container-chameleon {
+  .content-chameleon {
+    width: 80%;
+    min-width: 320px;
+    margin: 64px auto 32px auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+
+    .color-chameleon {
+      width: 100%;
+      height: 48px;
+      margin-bottom: 16px;
+      border-radius: 24px;
+      outline: none;
+      border: none;
+      appearance: none;
+      box-shadow: -5px 5px 0 $cor-branco;
+      perspective: 500px;
+
+      &::-webkit-color-swatch {
+        border: none;
+        border-radius: 20px;
+
+        &-wrapper {
+          outline: none;
+          padding: 0;
+          border: 1px solid $cor-branco;
+          border-radius: 24px;
+        }
+      }
+
+
+
+
+      &::placeholder {
+        color: $cor-branco;
+      }
+    }
+
+    .bg-chameleon {
+      width: clamp(20rem, 16.25rem + 16.6667vw, 31.25rem);
+      height: clamp(20rem, 16.25rem + 16.6667vw, 31.25rem);
+      background-color: $cor-preto;
+      border-radius: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      cursor: grab;
+
+      svg {
+        width: 100%;
+        height: auto;
+
+        #chameleon {
+          transform-origin: center center;
+          transform-box: fill-box;
+          filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.5));
+          cursor: pointer;
+
+          #eye {
+            transform-origin: 50% 50%;
+            transform-box: fill-box;
+            animation: blink 10s ease infinite alternate-reverse;
+          }
+
+          #iris {
+            transform-origin: center center;
+            transform-box: fill-box;
+            animation: iris 10s ease infinite alternate-reverse;
+          }
+
+          #body {
+            transform-origin: center center;
+            transform-box: fill-box;
+            transition: all 2s ease;
+          }
+
+          &:hover {
+            scale: 0.95;
+          }
+        }
+
+
+      }
+    }
   }
 }

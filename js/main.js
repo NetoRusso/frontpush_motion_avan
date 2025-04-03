@@ -10,6 +10,7 @@ const card3 = document.querySelector('.content-home-cards-3');
 const card4 = document.querySelector('.content-home-cards-4');
 const card5 = document.querySelector('.content-home-cards-5');
 const card6 = document.querySelector('.content-home-cards-6');
+const card7 = document.querySelector('.content-home-cards-7');
 
 const inserirHomeBtn = () => {
   const homeBtnHTML = criarHomeBtn();
@@ -49,6 +50,10 @@ card5.addEventListener('click', () => {
 
 card6.addEventListener('click', () => {
   window.location.href = '/pages/sharingan.html';
+});
+
+card7.addEventListener('click', () => {
+  window.location.href = '/pages/chameleon.html';
 });
 
 
