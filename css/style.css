@@ -2121,8 +2121,11 @@ html body main .home-btn:hover {
   position: relative;
   width: 100vw;
   height: 100vh;
+  max-height: 100vh;
   overflow: hidden;
   cursor: none;
+  top: 0;
+  left: 0;
 }
 .main-liquid .container-liquid {
   width: 100%;
